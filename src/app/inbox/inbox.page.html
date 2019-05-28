@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="inbox">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Inbox</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+<p>You have no unread messages.</p>
+  </ion-content>
+
+  <ion-content class="ion-padding">
+    <h4>You're all caught up!</h4>
+  </ion-content>
+
+  <ion-list>
+      <ion-button (click)="navToExplore()" fill="outline" size="large"><ion-icon name="search"></ion-icon></ion-button>
+      <ion-button (click)="navToSaved()" fill="outline" size="large"><ion-icon name="heart-empty"></ion-icon></ion-button>
+      <ion-button (click)="navToTrips()" fill="outline" size="large"><ion-icon name="home"></ion-icon></ion-button>
+      <ion-button (click)="navToInbox()" fill="outline" size="large"><ion-icon name="chatbubbles"></ion-icon></ion-button>
+      <ion-button (click)="navToProfile()" fill="outline" size="large"><ion-icon name="contact"></ion-icon></ion-button>
+      </ion-list>

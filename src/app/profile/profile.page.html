@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="profile">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+  <ion-avatar>
+    <img src ="assets/icon/IMG_3687.JPG">
+  </ion-avatar>
+  <h1>Hi, I'm Mark</h1>
+  <p>Joined in 2017</p>
+</div>
+
+  <div class="ion-padding">
+  <h2>About</h2>
+  <p>Lives in Tempe, Arizona</p>
+  </div>
+
+    <div class="ion-padding">
+      <h2>Info</h2>
+  <p> Email: marknoble@gmail.com </p>
+  <p>Phone Number: 876-445-1252</p>
+  </div>
+
+    <div class="ion-padding">
+  <h3>2 Reviews</h3>
+  <p>10/10, great stay</p>
+  <p>8/10, friendly</p>
+  </div>
+</ion-content>
+ <ion-list>
+<ion-button (click)="navToExplore()" fill="outline" size="large"><ion-icon name="search"></ion-icon></ion-button>
+<ion-button (click)="navToSaved()" fill="outline" size="large"><ion-icon name="heart-empty"></ion-icon></ion-button>
+<ion-button (click)="navToTrips()" fill="outline" size="large"><ion-icon name="home"></ion-icon></ion-button>
+<ion-button (click)="navToInbox()" fill="outline" size="large"><ion-icon name="chatbubbles"></ion-icon></ion-button>
+<ion-button (click)="navToProfile()" fill="outline" size="large"><ion-icon name="contact"></ion-icon></ion-button>
+</ion-list>

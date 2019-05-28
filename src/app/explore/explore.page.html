@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="explore">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Explore</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    Not sure what to put here?
+  </ion-content>
+
+  <ion-list>
+      <ion-button (click)="navToExplore()" fill="outline" size="large"><ion-icon name="search"></ion-icon></ion-button>
+      <ion-button (click)="navToSaved()" fill="outline" size="large"><ion-icon name="heart-empty"></ion-icon></ion-button>
+      <ion-button (click)="navToTrips()" fill="outline" size="large"><ion-icon name="home"></ion-icon></ion-button>
+      <ion-button (click)="navToInbox()" fill="outline" size="large"><ion-icon name="chatbubbles"></ion-icon></ion-button>
+      <ion-button (click)="navToProfile()" fill="outline" size="large"><ion-icon name="contact"></ion-icon></ion-button>
+      </ion-list>

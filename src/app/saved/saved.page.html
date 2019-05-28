@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="saved">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Saved</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+    <p>Not every day is filled with adventure, but you can start planning for the next one. Tap the 
+    heart on any home to start saving your favorites here.</p>
+  </ion-content>
+
+<ion-content>
+<ion-button expand="full" color="tertiary">Find Homes</ion-button>
+</ion-content>
+<ion-list>
+    <ion-button (click)="navToExplore()" fill="outline" size="large"><ion-icon name="search"></ion-icon></ion-button>
+    <ion-button (click)="navToSaved()" fill="outline" size="large"><ion-icon name="heart-empty"></ion-icon></ion-button>
+    <ion-button (click)="navToTrips()" fill="outline" size="large"><ion-icon name="home"></ion-icon></ion-button>
+    <ion-button (click)="navToInbox()" fill="outline" size="large"><ion-icon name="chatbubbles"></ion-icon></ion-button>
+    <ion-button (click)="navToProfile()" fill="outline" size="large"><ion-icon name="contact"></ion-icon></ion-button>
+    </ion-list>
