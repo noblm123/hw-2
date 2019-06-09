@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { User } from '../models';
 
 @Component({
   selector: 'app-profile',
@@ -9,6 +10,8 @@ import { NavController } from '@ionic/angular';
 export class ProfilePage {
 
   constructor(private navCtrl: NavController) {}
+
+  
 
   navToSaved() {
     this.navCtrl.navigateForward("saved");

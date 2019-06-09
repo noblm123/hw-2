@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'inbox', loadChildren: './inbox/inbox.module#InboxPageModule' },
   { path: 'explore', loadChildren: './explore/explore.module#ExplorePageModule' },
   { path: 'trips', loadChildren: './trips/trips.module#TripsPageModule' },
+  { path: 'tab1', loadChildren: './tab1/tab1.module#Tab1PageModule' }
 ];
 
 @NgModule({

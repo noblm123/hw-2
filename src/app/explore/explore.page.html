@@ -7,9 +7,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
-    Not sure what to put here?
-  </ion-content>
+  <ion-item *ngFor="let payment of payments">
+    {{transaction}}
+  </ion-item>
 
   <ion-list>
       <ion-button (click)="navToExplore()" fill="outline" size="large"><ion-icon name="search"></ion-icon></ion-button>
